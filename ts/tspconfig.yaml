@@ -1,5 +1,10 @@
 emit:
   - "@typespec/http-client-js"
+  - "@typespec/json-schema"
 options:
   "@typespec/http-client-js":
-    emitter-output-dir: "{output-dir}/clients/js"
+    emitter-output-dir: "{project-root}/../ui/gen/clients/js"
+  "@typespec/json-schema":
+    emitter-output-dir: "{project-root}/../ui/gen/jsonschema"
+    emitAllModels: true
+    file-type: "json"
